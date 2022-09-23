@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main()
+{
+    int tabu = 0;
+    printf("Digite qual numero da tabuada que você deseja\n");
+    scanf("%i", &tabu);
+
+    for (int x = 1; x<=10; ++x){
+    
+        printf("%ix%i = %i\n", x, tabu, x * tabu);    
+    }
+
+    return 0;
+}
