@@ -1,0 +1,38 @@
+#include <stdio.h>
+
+int main() {
+
+    int dia, mes, ano;
+    printf("Digite o dia do seu aniversário (dd):");
+    scanf("%d", &dia);
+    printf("Digite o mes do seu aniversário (mm):");
+    scanf("%d", &mes);
+    printf("Digite o ano do seu aniversário (aaaa):");
+    scanf("%d", &ano);
+    
+    int p1, p2, p3;
+
+    p1 = (dia*100 + mes) + ano;
+    p2 = (p1/100)+(p1%100);
+    p3 = (p2 % 5);
+
+    printf("Seu valor deu:%d\n", p3);
+
+    if (p3==0) {
+        printf("você foi definido como TÍMIDO!");
+    }
+    else if (p3==1) {
+        printf("você foi definido como SONHADOR!");
+    }
+    else if (p3==2) {
+        printf("você foi definido como PAQUERADOR!");
+    }
+    else if (p3==3) {
+        printf("você foi definido como ATRAENTE!");
+    }
+    else if (p3==4) {
+        printf("você foi definido como IRRESISTÍVEL!");
+    }
+
+    return 0;
+}
